@@ -1,0 +1,11 @@
+import pandas as pd
+data = pd.read_csv("jobs.csv")
+print (data)
+print (data["title"].value_counts)
+print(data["company"].value_counts)
+print(data["location"].value_counts)
+title = data["title"].value_counts()
+company = data["company"].value_counts()
+location = data["location"].value_counts()
+print ('___Berikut Data \n title, Company, location Terdikit___')
+print (company,title,location)
